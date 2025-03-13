@@ -5,7 +5,7 @@ import AnimatedNumber from './ui/AnimatedNumber';
 import { Clock, FileCheck, ShieldCheck } from 'lucide-react';
 
 const Benefits = () => {
-  const [sectionRef, isSectionInView] = useInView({ threshold: 0.1 });
+  const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
   
   const benefits = [
     {
@@ -59,7 +59,7 @@ const Benefits = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => {
-            const [benefitRef, isBenefitInView] = useInView({ threshold: 0.1 });
+            const [benefitRef, isBenefitInView] = useInView<HTMLDivElement>({ threshold: 0.1 });
             
             return (
               <div 

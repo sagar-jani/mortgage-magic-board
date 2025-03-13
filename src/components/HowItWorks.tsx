@@ -4,7 +4,7 @@ import { useInView } from '@/hooks/useInView';
 import { ArrowRight } from 'lucide-react';
 
 const HowItWorks = () => {
-  const [sectionRef, isSectionInView] = useInView({ threshold: 0.1 });
+  const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
   
   const steps = [
     {
@@ -49,7 +49,7 @@ const HowItWorks = () => {
         
         <div className="space-y-20 md:space-y-32">
           {steps.map((step, index) => {
-            const [stepRef, isStepInView] = useInView({ threshold: 0.1 });
+            const [stepRef, isStepInView] = useInView<HTMLDivElement>({ threshold: 0.1 });
             const isEven = index % 2 === 0;
             
             return (

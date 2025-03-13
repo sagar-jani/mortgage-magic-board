@@ -5,8 +5,8 @@ import {
   FileText, 
   Percent, 
   Users, 
-  FileInvoice, 
-  FileExport,
+  Shield,
+  ArrowRight,
   Lock,
   DollarSign
 } from 'lucide-react';
@@ -19,7 +19,7 @@ interface FeatureProps {
 }
 
 const Feature = ({ icon, title, description, delay }: FeatureProps) => {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView<HTMLDivElement>();
   
   return (
     <div 
@@ -41,7 +41,7 @@ const Feature = ({ icon, title, description, delay }: FeatureProps) => {
 };
 
 const Features = () => {
-  const [sectionRef, isSectionInView] = useInView({ threshold: 0.1 });
+  const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
   
   const features = [
     {
@@ -60,12 +60,12 @@ const Features = () => {
       description: "Efficiently manage lenders and payers in one centralized system with detailed records."
     },
     {
-      icon: <FileInvoice size={28} className="text-primary" />,
+      icon: <FileText size={28} className="text-primary" />,
       title: "Invoice Generation",
       description: "Generate monthly RCTI invoices for brokers automatically with detailed breakdowns."
     },
     {
-      icon: <FileExport size={28} className="text-primary" />,
+      icon: <ArrowRight size={28} className="text-primary" />,
       title: "ABA File Generation",
       description: "Create ABA files for direct file entry to streamline payment processing."
     },

@@ -23,7 +23,7 @@ const PricingTier = ({
   ctaText,
   delay 
 }: PricingTierProps) => {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView<HTMLDivElement>();
   
   return (
     <div 
@@ -74,7 +74,7 @@ const PricingTier = ({
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('monthly');
-  const [sectionRef, isSectionInView] = useInView({ threshold: 0.1 });
+  const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
   
   const tiers = [
     {

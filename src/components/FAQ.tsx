@@ -12,7 +12,7 @@ interface FAQItemProps {
 }
 
 const FAQItem = ({ question, answer, isOpen, onClick, delay }: FAQItemProps) => {
-  const [ref, isInView] = useInView();
+  const [ref, isInView] = useInView<HTMLDivElement>();
   
   return (
     <div 
@@ -50,7 +50,7 @@ const FAQItem = ({ question, answer, isOpen, onClick, delay }: FAQItemProps) => 
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
-  const [sectionRef, isSectionInView] = useInView({ threshold: 0.1 });
+  const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
   
   const faqs = [
     {
