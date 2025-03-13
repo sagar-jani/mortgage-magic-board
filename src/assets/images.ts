@@ -1,11 +1,11 @@
 
-// This file can be used to manage image references centrally
-// For placeholder images, we're using images from stock photo services
+// This file manages image references centrally
+// Using business and finance focused images appropriate for B2B mortgage software
 
 export const images = {
-  hero: "https://as2.ftcdn.net/v2/jpg/02/65/56/65/1000_F_265566504_OKyGBLlk6FlQCfX98c38noCQjBaGVL9Z.jpg",
-  step1: "https://as1.ftcdn.net/v2/jpg/04/52/69/80/1000_F_452698025_wgttQ1n7B83WrYPYvxvj5k3DXtR7ZfzL.jpg",
-  step2: "https://as2.ftcdn.net/v2/jpg/01/67/30/25/1000_F_167302503_qMpkg3LcSVmZCpA2XZjnNEpzdnZsXRDe.jpg",
-  step3: "https://as1.ftcdn.net/v2/jpg/04/94/08/34/1000_F_494083457_5osBvVZMQxb23v9clyGCZ8Tj3O4d6vIW.jpg",
+  hero: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80", // Professional laptop showing dashboard
+  step1: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80", // Code/data processing view
+  step2: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1200&q=80", // Team looking at financial data displays
+  step3: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80", // Team working with financial software
   logo: "/placeholder.svg"
 };

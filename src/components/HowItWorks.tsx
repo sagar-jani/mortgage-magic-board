@@ -2,6 +2,7 @@
 import { useRef } from 'react';
 import { useInView } from '@/hooks/useInView';
 import { ArrowRight } from 'lucide-react';
+import { images } from '@/assets/images';
 
 const HowItWorks = () => {
   const [sectionRef, isSectionInView] = useInView<HTMLElement>({ threshold: 0.1 });
@@ -11,19 +12,19 @@ const HowItWorks = () => {
       number: "01",
       title: "Import Funder Files",
       description: "Upload Excel, CSV, or PDF files containing loan and commission data. Our system automatically extracts all relevant information.",
-      image: "https://as1.ftcdn.net/v2/jpg/04/52/69/80/1000_F_452698025_wgttQ1n7B83WrYPYvxvj5k3DXtR7ZfzL.jpg"
+      image: images.step1
     },
     {
       number: "02",
       title: "Process & Calculate",
       description: "The system processes the data, calculates commissions, and assigns loans to the appropriate brokers based on split percentages.",
-      image: "https://as2.ftcdn.net/v2/jpg/01/67/30/25/1000_F_167302503_qMpkg3LcSVmZCpA2XZjnNEpzdnZsXRDe.jpg"
+      image: images.step2
     },
     {
       number: "03",
       title: "Generate & Distribute",
       description: "Generate invoices and ABA files with a single click. Distribute documents to brokers and process payments efficiently.",
-      image: "https://as1.ftcdn.net/v2/jpg/04/94/08/34/1000_F_494083457_5osBvVZMQxb23v9clyGCZ8Tj3O4d6vIW.jpg"
+      image: images.step3
     }
   ];
 

@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import GradientButton from './ui/GradientButton';
+import { images } from '@/assets/images';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -52,7 +53,7 @@ const Hero = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-0"></div>
               <img 
-                src="https://as2.ftcdn.net/v2/jpg/02/65/56/65/1000_F_265566504_OKyGBLlk6FlQCfX98c38noCQjBaGVL9Z.jpg" 
+                src={images.hero} 
                 alt="Mortgage Management Dashboard" 
                 className={`transition-all duration-1000 w-full h-auto rounded-2xl relative z-10 ${
                   isLoaded ? 'blur-loaded' : 'blur-loading'

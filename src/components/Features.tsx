@@ -5,8 +5,8 @@ import {
   FileText, 
   Percent, 
   Users, 
-  Shield,
-  ArrowRight,
+  FileCheck,
+  Building,
   Lock,
   DollarSign
 } from 'lucide-react';
@@ -55,17 +55,17 @@ const Features = () => {
       description: "Calculate broker commissions based on trail and upfront split percentages with precision."
     },
     {
-      icon: <Users size={28} className="text-primary" />,
+      icon: <Building size={28} className="text-primary" />,
       title: "Lender Management",
       description: "Efficiently manage lenders and payers in one centralized system with detailed records."
     },
     {
-      icon: <FileText size={28} className="text-primary" />,
+      icon: <FileCheck size={28} className="text-primary" />,
       title: "Invoice Generation",
       description: "Generate monthly RCTI invoices for brokers automatically with detailed breakdowns."
     },
     {
-      icon: <ArrowRight size={28} className="text-primary" />,
+      icon: <DollarSign size={28} className="text-primary" />,
       title: "ABA File Generation",
       description: "Create ABA files for direct file entry to streamline payment processing."
     },
