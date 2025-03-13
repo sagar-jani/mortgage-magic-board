@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,6 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				humbletech: {
+					'navy': '#0E2F56',
+					'cyan': '#00AEEF',
+					'dark-gray': '#4A4A4A',
+					'bg': '#F5F9FC',
+					'cyan-dark': '#008ECF',
+					'cyan-light': '#E0F4FF'
 				}
 			},
 			borderRadius: {

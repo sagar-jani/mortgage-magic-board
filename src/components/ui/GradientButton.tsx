@@ -18,8 +18,8 @@ const GradientButton = forwardRef<HTMLButtonElement, GradientButtonProps>(
           'active:scale-95 transform hover:scale-[1.02]',
           {
             'text-white bg-primary hover:shadow-lg hover:shadow-primary/30': variant === 'primary',
-            'text-primary bg-white border border-gray-100 hover:bg-gray-50': variant === 'secondary',
-            'text-primary bg-transparent border border-primary hover:bg-primary/5': variant === 'outline',
+            'text-humbletech-cyan bg-white border border-gray-100 hover:bg-gray-50': variant === 'secondary',
+            'text-humbletech-cyan bg-transparent border border-humbletech-cyan hover:bg-humbletech-cyan/5': variant === 'outline',
             'text-sm px-5 py-2': size === 'sm',
             'text-base px-6 py-3': size === 'md',
             'text-lg px-8 py-4': size === 'lg',

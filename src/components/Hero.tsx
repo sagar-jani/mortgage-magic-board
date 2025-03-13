@@ -28,20 +28,20 @@ const Hero = () => {
               isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <div className="inline-block mb-4 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+            <div className="inline-block mb-4 px-4 py-1 rounded-full bg-humbletech-cyan/10 text-humbletech-cyan text-sm font-medium">
               Mortgage Management Simplified
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-balance text-humbletech-navy">
               Automate Your Mortgage <br className="hidden md:block" /> 
-              <span className="text-primary">Management System</span>
+              <span className="text-humbletech-cyan">Management System</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">
+            <p className="text-lg md:text-xl text-humbletech-dark-gray mb-8 max-w-xl">
               Streamline your mortgage operations with automated file processing, 
               commission calculations, and invoice generation for lenders and brokers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <GradientButton size="lg">Get Started</GradientButton>
-              <GradientButton size="lg" variant="secondary">Book a Demo</GradientButton>
+              <GradientButton size="lg" className="bg-humbletech-cyan hover:bg-humbletech-cyan-dark">Get Started</GradientButton>
+              <GradientButton size="lg" variant="secondary" className="text-humbletech-cyan border-humbletech-cyan/20">Book a Demo</GradientButton>
             </div>
           </div>
           
@@ -51,7 +51,7 @@ const Hero = () => {
             }`}
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-0"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-humbletech-cyan/20 to-transparent z-0"></div>
               <img 
                 src={images.hero} 
                 alt="Mortgage Management Dashboard" 
@@ -63,8 +63,8 @@ const Hero = () => {
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-primary/10 rounded-full animate-pulse-soft"></div>
-            <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/5 rounded-full animate-float"></div>
+            <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-humbletech-cyan/10 rounded-full animate-pulse-soft"></div>
+            <div className="absolute -top-8 -right-8 w-24 h-24 bg-humbletech-cyan/5 rounded-full animate-float"></div>
           </div>
         </div>
       </div>

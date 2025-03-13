@@ -1,37 +1,36 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 210 33% 98%; /* #F5F9FC */
+    --foreground: 210 74% 20%; /* #0E2F56 */
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 210 74% 20%; /* #0E2F56 */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 210 74% 20%; /* #0E2F56 */
 
-    --primary: 210 100% 50%;
+    --primary: 196 100% 47%; /* #00AEEF */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11.2%;
+    --secondary: 0 0% 29%; /* #4A4A4A */
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 196 100% 94%; /* #E0F4FF */
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 100% 50%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 196 100% 47%; /* #00AEEF */
+    --accent-foreground: 210 74% 20%; /* #0E2F56 */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 196 100% 47%; /* #00AEEF */
 
     --radius: 0.75rem;
 
@@ -136,6 +135,14 @@
   
   .stagger-animate-delay-6 {
     animation-delay: 600ms;
+  }
+
+  .bg-gradient-hero {
+    @apply bg-gradient-to-br from-humbletech-bg to-white;
+  }
+  
+  .btn-primary-hover {
+    @apply hover:bg-humbletech-cyan-dark transition-colors duration-300;
   }
 }
 
