@@ -39,9 +39,9 @@ const Hero = () => {
               Streamline your mortgage operations with automated file processing, 
               commission calculations, and invoice generation for lenders and brokers.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-5">
               <GradientButton size="lg" className="bg-humbletech-cyan hover:bg-humbletech-cyan-dark">Get Started</GradientButton>
-              <GradientButton size="lg" variant="secondary" className="text-humbletech-cyan border-humbletech-cyan/20">Book a Demo</GradientButton>
+              <GradientButton size="lg" variant="outline" className="border-humbletech-cyan hover:bg-humbletech-cyan/5">Book a Demo</GradientButton>
             </div>
           </div>
           
